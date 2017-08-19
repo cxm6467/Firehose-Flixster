@@ -82,3 +82,35 @@ body{
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
 }
+
+
+html{
+  height: 100%;
+}
+
+body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#flex-content-container{
+  flex: 1;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background-color: rgba(36, 32, 33, 0.9);
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px 0px;
+  margin-top: 30px;
+  background: image_url('office.png');
+}
+
+#footer a{
+  color: white;
+  font-weight: 100;
+}
