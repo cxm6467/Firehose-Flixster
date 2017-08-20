@@ -1,7 +1,11 @@
 <br />
 <div class="booyah-box col-10 offset-1">
-  <h1><%= @course.title %></h1>
+  <h1 class="text-center"><%= @course.title %></h1>
   <br />
+  <div class="text-center">
+    <%= link_to 'Add a new section...', new_instructor_course_section_path(@course), class: 'btn btn-primary btn-lg' %>
+  </div>
+</div>
   <div class="row">
     <div class="col-sm-4 col-12 text-center">
       <span class="badge badge-default">
@@ -11,7 +15,7 @@
       <% if current_user && current_user == @course.user %>
         <br />
         <br />
-        <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
+        <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-lg' %>
       <% end %>
     </div>
 
