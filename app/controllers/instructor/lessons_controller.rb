@@ -1,4 +1,5 @@
 class Instructor::LessonsController < ApplicationController
+  before_action :authenticate_user!
   def new
     @section = Section.find(params[:section_id])
     @lesson = Lesson.new
