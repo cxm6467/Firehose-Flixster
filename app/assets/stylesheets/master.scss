@@ -9,15 +9,12 @@
   background: image_url('office.png');
 }
 
-.navbar-inverse a.navbar-brand{
+.navbar-inverse a.navbar-brand, a{
   font-family:  'Source Sans Pro', sans-serif;
   font-weight: 100;
-  color: white;
+  color: white ;
 }
 
-a:link, a:visited, a:hover, a:active{
-  color: white !important;
-}
 
 .hero{
   background: image_url('hero.jpg') no-repeat center center fixed;
