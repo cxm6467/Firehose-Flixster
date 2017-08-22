@@ -61,8 +61,11 @@ end
 # Simple forms
 gem 'simple_form'
 
-# Users
-gem 'devise'
+# Users << Users
+gem 'devise' 
 
 # CarrierWave for pictures
 gem 'carrierwave' , '~> 1.0'
+
+# Figaro for the bs of envars
+gem 'figaro'
