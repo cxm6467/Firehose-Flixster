@@ -63,3 +63,6 @@ gem 'simple_form'
 
 # Users
 gem 'devise'
+
+# CarrierWave for pictures
+gem 'carrierwave' , '~> 1.0'
