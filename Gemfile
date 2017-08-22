@@ -69,3 +69,6 @@ gem 'carrierwave' , '~> 1.0'
 
 # Figaro for the bs of envars
 gem 'figaro'
+
+# Fog for aws
+gem 'fog-aws'
