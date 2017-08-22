@@ -1,9 +1,24 @@
+-- Controller
+
+class CoursesController < ApplicationController
+  def index 
+    @courses = Course.all
+  end
+  def show
+    @course = Course.find(params[:id])
+  end
+end
+
+-- View
+
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center">Learn something today</h1>
   <hr />
 
-  <% @courses.each do |course| %>
-    <h2 class="text-center"><%= course.title %></h2>
+  <% @course.each  do |course| %>
+    <h2 class="text-center">
+      <%= link_to course.title, course_path(course) %>
+    </h2>
     <br />
     <div class="row">
       <div class="col-sm-8 col-12">
