@@ -72,3 +72,6 @@ gem 'figaro'
 
 # Fog for aws
 gem 'fog-aws'
+
+# MiniMagik -- Pictureeees
+gem 'mini_magick'
