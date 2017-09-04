@@ -75,3 +75,6 @@ gem 'mini_magick'
 
 # new aws/carrier wave
 gem 'carrierwave-aws'
+
+#  Stripe payments
+gem 'stripe'
