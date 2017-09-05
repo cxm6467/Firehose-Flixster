@@ -78,3 +78,6 @@ gem 'carrierwave-aws'
 
 #  Stripe payments
 gem 'stripe'
+
+# Ranked model for moving stuff and things
+gem 'ranked-model'
