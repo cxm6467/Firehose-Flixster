@@ -81,3 +81,6 @@ gem 'stripe'
 
 # Ranked model for moving stuff and things
 gem 'ranked-model'
+
+#jQuery UI
+gem 'jquery-ui-rails'
