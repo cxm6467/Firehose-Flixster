@@ -9,7 +9,12 @@ Rails.application.routes.draw do
   resources :courses, only: [:index, :show]
   resources :lessons, only: [:show]
   namespace :instructor do
+<<<<<<< HEAD
     resources :sections, only: [ :update ] do
+=======
+    resources :lessons, only: [:update]
+    resources :sections, only: [] do
+>>>>>>> 648f818eb9e8b7ceedf5dfac67fcefbbc54838c4
       resources :lessons, only: [:new, :create]
     end
     resources :courses, only: [:new, :create, :show] do
