@@ -164,6 +164,7 @@ ul .header .fa{
   border: 1px solid;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 20px;
+  margin: 20px;
 }
 
 .lessons li{
@@ -177,4 +178,9 @@ ul .header .fa{
 }
 .lessons li b {
   font-size: 25px;
+  font-weight: 100;
+}
+
+.lessons li p {
+  margin: 0;
 }
