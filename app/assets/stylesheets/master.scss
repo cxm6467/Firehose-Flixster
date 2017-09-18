@@ -126,7 +126,7 @@ body{
   padding: 2px 8px 2px 8px;
   margin: 10px;
 }
-.clr{
+.clear{
   clear: both;
 }
 
@@ -168,4 +168,13 @@ ul .header .fa{
 
 .lessons li{
   background: black;
+  color: white; 
+  margin: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  padding: 8px;
+  font-size: 15px;
+}
+.lessons li b {
+  font-size: 25px;
 }
