@@ -13,7 +13,6 @@ class Instructor::SectionsController < ApplicationController
         render text: "updated!"
     end
     
-    
     private
 
     helper_method :current_course
