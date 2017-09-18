@@ -3,13 +3,6 @@ class Instructor::SectionsController < ApplicationController
     before_action :require_authorize_for_current_course, only: [:create]
     before_action :require_authorize_for_current_section, only: [:update]
     
-    # def new
-    #     @course = Course.find(params[:course_id])
-    #     @section = Section.new
-
-    # end
-
-    
     def create
         @section = current_course.sections.create(section_params)
         redirect_to instructor_course_path(current_course)
@@ -21,39 +14,39 @@ class Instructor::SectionsController < ApplicationController
     end
     
     
-private
+    private
 
-helper_method :current_course
-helper_method :current_section
+    helper_method :current_course
+    helper_method :current_section
 
-def current_course
-    if params[:course_id]
-        @current_course ||= Course.find(params[:course_id])
-    else
-        current_section.course
+    def current_course
+        if params[:course_id]
+            @current_course ||= Course.find(params[:course_id])
+        else
+            current_section.course
+        end
     end
-end
 
-def current_section
-    @current_section ||= Section.find(params[:id])
-end
-
-def require_authorize_for_current_course
-    if current_course.user != current_user
-        render text: 'Unauthorized!', status: :unauthorized
+    def current_section
+        @current_section ||= Section.find(params[:id])
     end
-end
 
-def require_authorize_for_current_section
-    if current_section.course.user != current_user
-        render text: 'Unauthorized', status: :unauthorized
+    def require_authorize_for_current_course
+        if current_course.user != current_user
+            render text: 'Unauthorized!', status: :unauthorized
+        end
     end
-end
+
+    def require_authorize_for_current_section
+        if current_section.course.user != current_user
+            render text: 'Unauthorized', status: :unauthorized
+        end
+    end
 
 
-def section_params
-    params.require(:section).permit(:title, :row_order_position)
-end
+    def section_params
+        params.require(:section).permit(:title, :row_order_position)
+    end
 
 
 end
