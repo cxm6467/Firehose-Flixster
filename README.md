@@ -1,24 +1,7 @@
-# README
+# Flixster
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+A two sided video streaming marketplace platform, featuring credit card payment capabilities, user role management, complex user interfaces and advanced database relationships. Also wrote complex algorithms and applied new skills to solve real world interview challenges.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Purpose
+The purpose of this application was to apply advanced topics while doing more challenging tasks on my own.  For example, adding a javascript row order drag and drop for the sections.  This was done in a previous lesson on the lesson aspect of a course but with step-by-step instruction.
